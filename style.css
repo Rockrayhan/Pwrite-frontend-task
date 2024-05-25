@@ -21,6 +21,7 @@
 p {
     font-family: 'Roobert';
     font-size: 24px;
+    width: 100%;
 }
 
 button {
@@ -38,6 +39,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Rebond Grotesque', sans-serif;    
+    width: 100%;
 }
 
 .text-color-primary{
@@ -71,8 +73,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-links {
     display: flex;
-    justify-content: space-between;
-    width: 25%;
+    justify-content: space-evenly;
+    width: 50%;
 
 }
 
@@ -217,7 +219,56 @@ height: 251px;
 
 
 
+.writting-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 180px;
+}
 
+
+.writting-img{
+    background: rgba(248, 241, 252, 1);
+    width: 419px;
+    height: 420px;
+    border-radius: 50px ;
+}
+
+
+.writting-img-2{
+    background: rgba(240, 246, 255, 1);
+    width: 419px;
+    height: 420px;
+    border-radius: 50px ;
+}
+
+.writting-img img, .writting-img-2 img {
+    margin-top: -50px;
+}
+
+.writting-text {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.writting-text h6 {
+    font-size: 72px;
+}
+
+
+.writting-text p {
+    font-size: 22px;
+}
+
+.writting-section button {
+    width: 203px;
+    padding: 16px 24px 16px 24px;
+    border-radius: 100px ;
+}
 
 
 
@@ -232,8 +283,31 @@ height: 251px;
 
 /* For  Mobiles   */
 @media screen and (max-width:576px) {
+
+    .features-section{
+        margin-top: 370px;
+    }
+    
+
+    .features-headline-left {
+        grid-column: span 12; 
+    }
+    
+    .features-headline-right {
+        grid-column: span 12; 
+    }
+
     .features-content {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .writting-section {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .writting-text {
+        width: 100%;
+        
     }
 
 
@@ -242,9 +316,33 @@ height: 251px;
 /* For Tabs   */
 
 @media screen and (min-width:577px) and (max-width:992px) {
+    .features-section{
+        margin-top: 370px;
+    }
+    
+
+    .features-headline-left {
+        grid-column: span 12; 
+    }
+    
+    .features-headline-right {
+        grid-column: span 12; 
+    }
+    
     .features-content {
         grid-template-columns: repeat(2, 1fr);
+        
     }
+    .writting-section {
+        grid-template-columns: repeat(1,1fr);
+        gap: 16px;
+    }
+
+    .writting-text {
+        width: 100%;
+        
+    }
+
 
     
 
