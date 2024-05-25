@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'Rebond Grotesque';
+    src: url('assets/fonts/rebond-Extrabold.otf') format('opentype'),
+}
+@font-face {
+    font-family: 'Roobert';
+    src: url('assets/fonts/RoobertRegular.ttf') format('truetype'),
+}
+
+
+/* ======== Common ========= */
+
+/* Basic CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+p {
+    font-family: 'Roobert';
+    font-size: 24px;
+}
+
+button {
+    background: rgba(57, 25, 82, 1);
+    color: white;
+}
+
+body {
+    background: rgba(255, 255, 255, 1);
+    margin-left: 143px;
+    margin-right: 140px;
+    color: rgba(57, 25, 82, 1);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rebond Grotesque', sans-serif;    
+}
+
+.text-color-primary{
+    color: rgba(185, 127, 230, 1);
+}
+
+/*======= navbar =========*/
+
+.nav-bar{
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 24px;
+    /* width: 1343px; */
+    width: 100%;
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    margin-top: 40px;
+
+}
+
+.nav-bar a  {
+    text-decoration: none;
+    color: rgba(57, 25, 82, 1);
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+
+}
+
+.login-btn {
+    background: rgba(255, 255, 255, 1);
+    color: rgba(57, 25, 82, 1);
+    border: none;
+}
+
+.try-free-btn {
+    background: rgba(57, 25, 82, 1);
+    color: white;
+    padding: 13px 24px 13px 24px;
+    gap: 8px;
+    border-radius: 100px ;
+
+}
+
+
+/* ======= banner ======== */
+
+.banner{
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.banner-headline {
+font-size: 100px;
+text-align: center;
+margin: 0;
+margin-bottom: 20px;
+}
+
+
+
+.banner button {
+padding: 16px 24px 16px 24px;
+gap: 8px;
+border-radius: 100px;
+width: 194px;
+
+}
+
+
+.banner-center {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 727px;
+    height: 517px;    
+    margin-top: 147px;
+}
+
+
+
+/* ===== features ======= */
+
+.features-section{
+    margin-top: 180px;
+}
+
+.features-headline {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    gap: 16px; 
+    padding: 16px;
+}
+
+.features-headline h1 {
+    font-family: 'Rebond Grotesque', sans-serif; 
+    font-size: 72px;
+}
+
+.features-headline p {
+    font-size: 22px;
+    font-weight: 400px;
+}
+
+.features-headline button {
+padding: 16px 24px 16px 24px;
+gap: 8px;
+border-radius: 100px;
+width: 194px;
+}
+
+
+.features-headline-left {
+    grid-column: span 8; 
+}
+
+.features-headline-right {
+    grid-column: span 4; 
+}
+
+
+.features-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    /* gap: 16px;  */
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 16px;
+}
+
+.features-card .img-div{
+    background: rgba(240, 231, 249, 1);
+    width: 76px;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;    
+}
+
+.features-card img {
+width: 42px;
+height: 42px;
+}
+.features-card h6 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.features-card p {
+    font-size: 18px;
+    width: 400;
+}
+
+.features-card {
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+gap: 16px;
+width: 326px;
+height: 251px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================ media query ==================== */
+
+
+/* For  Mobiles   */
+@media screen and (max-width:576px) {
+    .features-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
+
+/* For Tabs   */
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .features-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+
+}
+
+
+
+
+
+
+/* ===================================================*/
