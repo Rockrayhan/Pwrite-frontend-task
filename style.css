@@ -345,6 +345,20 @@ h1 {
   font-size: 56px;
 }
 
+/* first box */
+
+.tools-card-right {
+  display: flex;
+  gap: 27px;
+}
+
+.tools-card-right .assist-img-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+
 .tools-card-right .person {
   background: rgba(145, 41, 209, 1);
   width: 167px;
@@ -388,10 +402,8 @@ h1 {
   font-weight: 400;
   color: rgba(156, 163, 175, 1);
   padding: 14px 14px 53px 14px;
-  width:  291.73px;
-  height: 93.32px ;
-
-
+  width: 291.73px;
+  height: 93.32px;
 }
 
 .tools-card-right .tone-types {
@@ -400,7 +412,6 @@ h1 {
 }
 
 .tone {
-
   /* width: 61.47px; */
   /* height: 29.64px; */
   padding: 4.82px 7.23px 4.82px 7.23px;
@@ -417,22 +428,79 @@ h1 {
 }
 .tone-friendly {
   background: rgba(217, 243, 236, 1);
-  border: 1.21px solid rgba(204, 231, 223, 1)
+  border: 1.21px solid rgba(204, 231, 223, 1);
 }
 .tone-funny {
   background: rgba(249, 223, 223, 1);
-  border: 1.21px solid rgba(241, 210, 210, 1)
+  border: 1.21px solid rgba(241, 210, 210, 1);
 }
 .tone-emotional {
   background: rgba(196, 201, 239, 1);
-  border: 1.21px solid rgba(182, 186, 228, 1)
+  border: 1.21px solid rgba(182, 186, 228, 1);
+}
+
+/* second box */
+
+.tools-card-right .mail-box {
+  width: 425px;
+  height: 309px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 6.24px 6.24px -3.12px rgba(16, 24, 40, 0.03);
+  box-shadow: 0px 15.59px 18.71px -3.12px rgba(16, 24, 40, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tools-card-right .mail-content {
+  width: 365px;
+  height: 223px;
+  font-size: 13.25px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+}
+
+/* third box */
+.tools-card-right .info-box {
+  width: 425px;
+  height: 288px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.info-box .rewrite-box {
+  width: 90px;
+  height: 30px;
+  padding: 8px 0px 0px 0px;
+  gap: 4px;
+  border-radius: 6px;
+  opacity: 0.8px;
+  background: rgba(232, 236, 254, 1);
+}
+
+.info-box .info-one {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 5px;
+}
+
+.info-box .info-text {
+  width: 425px;
+height: 52px;
+padding: 0px 16px 8px 16px;
+border: 0px 0px 1px 0px;
+font-size: 16px;
+font-weight: 400;
+border-bottom: 1px solid rgba(229, 229, 229, 1)
 }
 
 
-
-
-
-
+.info-color {
+  color: rgb(28, 115, 255)
+}
 
 /*=======  tools items section =======*/
 
