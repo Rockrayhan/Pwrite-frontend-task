@@ -109,7 +109,7 @@ button {
 /* ======= banner ======== */
 
 .banner {
-  /* height: 100vh; */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,8 +136,14 @@ button {
   /* justify-content: center; */
   align-items: center;
   width: 727px;
-  height: 517px;
-  margin-top: 147px;
+  /* height: 517px; */
+  margin-top: 100px;
+  gap: 40px;
+}
+
+.banner-center p {
+font-size: 24px;
+font-weight: 500;
 }
 
 /* ===== features ======= */
@@ -162,6 +168,11 @@ button {
 
 .features-headline-right {
   grid-column: span 4;
+}
+
+.features-headline-left p {
+  margin-top: 24px;
+  margin-bottom: 36px;
 }
 
 .features-content {
@@ -374,7 +385,8 @@ h1 {
 }
 
 
-/* ======= faq section ======= */
+
+/* ======= section faq ========*/
 
 .faq-section {
   width: 80%;
@@ -385,18 +397,41 @@ h1 {
 }
 
 .accordion-header h6 {
-  font-size: 28px ;
+  font-size: 28px;
+  margin: 0;
 }
 
 .accordion-header {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-header .bi-plus-lg {
+  transition: transform 0.3s ease;
+}
+
+.accordion-header.active .bi-plus-lg {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  display: none;
+  padding: 20px;
+}
+
+.accordion-content {
+  font-size: 18px;
+  font-weight: 400px;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
 }
 
 
-.accordion-item {
-  margin: 10px;
-}
 
 
 
