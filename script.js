@@ -7,3 +7,17 @@ document.querySelectorAll('.accordion-header').forEach(item => {
     });
   });
   
+
+
+  document.querySelector('.hamburger-menu').addEventListener('click', () => {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    mobileMenu.classList.toggle('open');
+  });
+  
+  // Close the menu if a link is clicked
+  document.querySelectorAll('.mobile-menu a, .mobile-menu button').forEach(item => {
+    item.addEventListener('click', () => {
+      document.querySelector('.mobile-menu').classList.remove('open');
+    });
+  });
+  
