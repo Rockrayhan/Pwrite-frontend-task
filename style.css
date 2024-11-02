@@ -245,7 +245,7 @@ button {
 .rating-section {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .rating-container {
@@ -255,7 +255,7 @@ button {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  margin-top: 250px;
+  margin-top: 150px;
   justify-content: space-between;
 }
 
@@ -379,7 +379,11 @@ button {
 .writting-img img,
 .writting-img-2 img {
   margin-top: -70px;
-  
+}
+
+.writting-img-model{
+  /* height: 20em;
+  width: 20em; */
 }
 
 .writting-text {
@@ -459,6 +463,9 @@ button {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 128px;
+  padding: 30px;
+
+  width: fit-content;
 }
 
 .bg-primary {
